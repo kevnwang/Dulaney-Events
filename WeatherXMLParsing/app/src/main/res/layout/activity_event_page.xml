@@ -1,0 +1,54 @@
+
+<!--XML formatting for EventPage activity
+    displays all Event information, contact information, sharing to social networks and adding to user's calendar-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="kevintesting.weatherxmlparsing.EventPage">
+
+    <!-- displays information of the Event -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/info"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="24sp" />
+    <!-- allows user to share Event to social networks via intent -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/sharing"
+        android:textSize="30sp"
+        android:layout_above="@+id/calendar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#FF0000"/>
+    <!-- allows user to edit their personal message to social networks when sharing -->
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customMessage"
+        android:text=""
+        android:layout_above="@+id/sharing"
+        android:layout_centerHorizontal="true"
+        android:textSize="26dp" />
+    <!-- allows user to add Event to their Google Calendar -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Calendar"
+        android:id="@+id/calendar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:background="#b29600"/>
+</RelativeLayout>
